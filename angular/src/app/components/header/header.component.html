@@ -1,0 +1,24 @@
+<header>
+  <nav class="navbar">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" (click)='navbarCollapse($event)'>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="/" (click)='navbarCollapse($event)'>
+        <img src="../assets/images/logo.png" alt="logo world news">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="menu" #menu>
+      <ul class="nav navbar-nav">
+        <li class="navbar-nav__item" routerLinkActive="navbar-nav__item--active" [routerLinkActiveOptions]="{ exact: true }">
+          <a routerLink="/" (click)='navbarCollapse($event)'>Home</a>
+        </li>
+        <li class="navbar-nav__item" routerLinkActive="navbar-nav__item--active">
+          <a routerLink="/about" (click)='navbarCollapse($event)'>About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

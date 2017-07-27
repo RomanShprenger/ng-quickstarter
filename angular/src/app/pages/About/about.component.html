@@ -1,0 +1,17 @@
+<div class="awd-about">
+    <div class="awd-about-header">
+        <div class="awd-about-title">
+            <div class="awd-about-title__text">
+                <h3>Template of page</h3>
+            </div>
+        </div>
+    </div>
+    <div class="awd-about-content">
+        <div class="awd-about-content__text">
+            <button class="btn-lg" (click)="getRandomPhoto()">Random photo</button>
+        </div>
+        <div class="awd-about-content__text">
+            <img *ngIf="imgUrl" src="{{imgUrl}}" alt="random photo">
+        </div>
+    </div>
+</div>

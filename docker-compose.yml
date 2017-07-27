@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  angular:
+    build: angular
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./angular/:/usr/src/app/

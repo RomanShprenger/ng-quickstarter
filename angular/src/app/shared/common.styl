@@ -1,0 +1,149 @@
+@import 'variables'
+
+
+:host
+    font-size: 20px
+    font-family: $font-main
+    height: 100%
+    margin: 0
+    box-sizing: border-box
+
+:host /deep/    // For global styles
+    *
+        box-sizing: border-box
+        transition: 0.3s
+
+    .app-wrapper
+        height: 100%
+        padding: 0
+        margin: 0
+        display: flex
+
+    main
+        position: relative
+        overflow: scroll
+        padding: 50px 10%
+        flex: 1
+        background-color: $white
+
+    .container
+        margin: 0 auto
+        max-width: 1170px
+
+    h1, h2, h3, h4, h5, h6
+        font-family: $font-main
+        color: rgba(32,33,36,1)
+
+    h1
+        font-weight: 700
+
+    h2
+        font-weight: 700
+
+    h3
+        font-weight: 500
+
+    h4, h5
+        font-weight: 400
+
+    h5
+        font-size: 0.7em
+
+    a
+        color: rgba(32,33,36,1)
+        text-decoration: none
+        font-family: $font-main
+        font-weight: 400
+
+    p
+        font-size: 0.8em
+        font-family: $font-main
+        font-weight: 400
+        color: rgba(32,33,36,0.7)
+
+    label
+        font-size: 0.7em
+        font-weight: normal
+
+    img
+        width: 100%
+        height: auto
+
+    .hidden
+        display: none
+
+    .mb
+        &16
+            margin-bottom: 16px
+        &32
+            margin-bottom: 32px
+
+    .mt
+        &16
+            margin-top: 16px
+        &32
+            margin-top: 32px
+
+    .pb
+        &16
+            padding-bottom: 16px
+        &32
+            padding-bottom: 32px
+
+    .pt
+        &16
+            padding-top: 16px
+        &32
+            padding-top: 32px
+
+    .nopadding
+        padding-left: 0
+        padding-right: 0
+
+    .nomargin
+        margin-left: 0
+        margin-right: 0
+
+    .text
+        &-center
+            text-align: center
+        &-left
+            text-align: left
+        &-right
+            text-align: right
+
+    button
+        padding: 6px 12px
+        border-radius: 0
+        box-shadow: none
+        background-color: $white
+        border: 1px solid $black
+        margin: 15px
+        font-family: $font-main
+        &.btn-lg
+            font-size: 20px
+        &:focus
+            outline: none
+        &:hover
+            background-color: darken($white, 20%)
+            cursor: pointer
+
+@media (max-width: 1199px)
+    :host /deep/
+        main
+            padding: 30px
+
+
+@media (max-width: 991px)
+    :host /deep/
+        main
+            padding: 50px 30px
+
+
+@media(max-width: 767px)
+    :host /deep/
+        .app-wrapper
+            flex-direction: column
+
+        main
+            overflow: visible
