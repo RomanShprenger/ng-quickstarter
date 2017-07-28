@@ -13,10 +13,9 @@ Frontend:
 
 # Getting Started
 
-1. In angular folder run "npm install"
-2. In main folder "docker-compose up --build"
-4. Wait in your terminal line like "[at-loader] Ok, 0.857 sec." (P.S. Time may be different)
-5. Open in your browser "http://localhost:8080/"
+1. In main folder "docker-compose up --build"
+2. Wait in your terminal line like "[at-loader] Ok, 0.857 sec." (P.S. Time may be different)
+3. Open in your browser "http://localhost:8080/"
 
 Your project will build and run.
 Next time use "docker-compose up" for run project.
